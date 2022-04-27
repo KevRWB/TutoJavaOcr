@@ -4,10 +4,18 @@ import java.util.*;
 public class Array {
 
     public static void main(String[] args) {
+
+        //---------------------------Array
         String[] colors = new String[]{"Red", "Blue", "Orange"};
 
         colors[0] = "Yellow";
         System.out.println(colors[1]);
+
+        //------------------------2D Array
+        int[][] twoDArray = new int[][]{{1, 3, 4}, {4, 8, 9}, {9, 0, 5}};
+        int value = twoDArray[1][1]; // 8
+        String arrayToString = Arrays.deepToString(twoDArray); //2D array in string
+        System.out.println(arrayToString);
 
         //--------------------------ArrayList
         List<Integer> numberList = new ArrayList<>();
