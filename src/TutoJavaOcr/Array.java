@@ -14,6 +14,24 @@ public class Array {
         //------------------------2D Array
         int[][] twoDArray = new int[][]{{1, 3, 4}, {4, 8, 9}, {9, 0, 5}};
         int value = twoDArray[1][1]; // 8
+
+            //-------------------Loop in 2D Arrays
+                //---------------Row Major Order
+                for(int i = 0; i < twoDArray.length; i++){
+                    for(int j = 0; j < twoDArray[0].length; j++){
+                        twoDArray[i][j] += 20;
+                    }
+                }
+                //--------------Column Major Order
+                int count;
+                for(int i = 0; i < twoDArray[0].length; i++){
+                    count = 0;
+                    for(int j = 0; j < twoDArray.length; j++){
+                        count += twoDArray[j][i];
+                    }
+                    System.out.println(count);
+                }
+
         String arrayToString = Arrays.deepToString(twoDArray); //2D array in string
         System.out.println(arrayToString);
 
@@ -42,4 +60,6 @@ public class Array {
 
         System.out.println(mySet);
         }
+
+        //---------------------------MAP & HashMap
 }

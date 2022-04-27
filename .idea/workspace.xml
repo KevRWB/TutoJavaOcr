@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a8d1412-057c-44d6-9458-5235261514cf" name="Changes" comment="Tuto Java Open classroom Array, ArrayList (List), Set(HashSET)">
+      <change afterPath="$PROJECT_DIR$/src/TutoJavaOcr/TestField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TutoJavaOcr/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TutoJavaOcr/Array.java" afterDir="false" />
     </list>
@@ -39,7 +40,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Array">
+  <component name="RunManager" selected="Application.TestField">
     <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TutoJavaOcr.Array" />
       <module name="TutoJavaOcr" />
@@ -55,19 +56,6 @@
     </configuration>
     <configuration name="Book" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TutoJavaOcr.Book" />
-      <module name="TutoJavaOcr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TutoJavaOcr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Boucles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TutoJavaOcr.Boucles" />
       <module name="TutoJavaOcr" />
       <extension name="coverage">
         <pattern>
@@ -106,13 +94,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestField" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TutoJavaOcr.TestField" />
+      <module name="TutoJavaOcr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TutoJavaOcr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestField" />
         <item itemvalue="Application.Array" />
         <item itemvalue="Application.Heritage" />
         <item itemvalue="Application.Book" />
         <item itemvalue="Application.MainArgs" />
-        <item itemvalue="Application.Boucles" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651064250980</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tuto Java Open classroom Array, ArrayList (List), Set(HashSET)">
+      <created>1651068726314</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651068726314</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
