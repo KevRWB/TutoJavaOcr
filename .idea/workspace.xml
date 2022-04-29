@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a8d1412-057c-44d6-9458-5235261514cf" name="Changes" comment="Tuto Java Open classroom Array, ArrayList (List), Set(HashSET)&#10;Map/HashMap">
-      <change afterPath="$PROJECT_DIR$/src/TutoJavaOcr/Parameters.java" afterDir="false" />
+    <list default="true" id="2a8d1412-057c-44d6-9458-5235261514cf" name="Changes" comment="Tuto Java Open classroom Paramaters - Arguments by reference or by value">
+      <change afterPath="$PROJECT_DIR$/src/StarShip/Crew.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StarShip/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StarShip/Ship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StarShip/Voyage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TutoJavaOcr/Recursivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TutoJavaOcr/TestField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TutoJavaOcr/TestField.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,35 +45,9 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Parameters">
+  <component name="RunManager" selected="Application.Voyage">
     <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TutoJavaOcr.Array" />
-      <module name="TutoJavaOcr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TutoJavaOcr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Book" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TutoJavaOcr.Book" />
-      <module name="TutoJavaOcr" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TutoJavaOcr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Heritage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TutoJavaOcr.Heritage" />
       <module name="TutoJavaOcr" />
       <extension name="coverage">
         <pattern>
@@ -93,6 +72,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Recursivity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TutoJavaOcr.Recursivity" />
+      <module name="TutoJavaOcr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TutoJavaOcr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestField" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TutoJavaOcr.TestField" />
       <module name="TutoJavaOcr" />
@@ -106,13 +98,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Voyage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StarShip.Voyage" />
+      <module name="TutoJavaOcr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StarShip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Voyage" />
+        <item itemvalue="Application.Recursivity" />
         <item itemvalue="Application.Parameters" />
         <item itemvalue="Application.Array" />
         <item itemvalue="Application.TestField" />
-        <item itemvalue="Application.Heritage" />
-        <item itemvalue="Application.Book" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651219810076</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Tuto Java Open classroom Paramaters - Arguments by reference or by value">
+      <created>1651221330461</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651221330461</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,6 +207,7 @@
     <MESSAGE value="Tuto Java Open classroom Array, ArrayList (List), Set(HashSET)" />
     <MESSAGE value="Tuto Java Open classroom Array, ArrayList (List), Set(HashSET)&#10;To fix TesPlayGround" />
     <MESSAGE value="Tuto Java Open classroom Array, ArrayList (List), Set(HashSET)&#10;Map/HashMap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tuto Java Open classroom Array, ArrayList (List), Set(HashSET)&#10;Map/HashMap" />
+    <MESSAGE value="Tuto Java Open classroom Paramaters - Arguments by reference or by value" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tuto Java Open classroom Paramaters - Arguments by reference or by value" />
   </component>
 </project>

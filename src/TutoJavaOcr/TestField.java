@@ -1,23 +1,53 @@
 package TutoJavaOcr;
 
 import java.util.*;
-import java.util.HashSet;
-import java.util.Set;
-
 public class TestField {
 
     public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(5,6,8,9);
-        System.out.println(list);
+        Livre livre1 = new Livre("Livre 1", "horror", 200);
+        Livre livre2 = new Livre("Livre 2", "horror",300);
+        Livre livre3 = new Livre("Livre 3", "love",150);
+        Livre livre4 = new Livre("Livre 4", "love", 350);
 
-        Set<Integer> numberlist = new HashSet<>(Arrays.asList(2,5,8,6,3));
-        System.out.println(numberlist);
-        // /!\ Fix This !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        for(int number : numberlist){
-            if(number == 2){
-                number++;
-            }
+        System.out.println(livre1);
+    }
+
+
+}
+
+class Library{
+    String name;
+    BookCaterorie categorie;
+    public Library(String name, BookCaterorie categorie){
+        this.name = name;
+        this.categorie = categorie;
+    }
+}
+
+class BookCaterorie{
+
+}
+
+class Livre{
+    String name;
+    String categorie;
+    int pages;
+    public Livre(String name, String categorie, int pages){
+        this.name = name;
+        this.categorie = categorie;
+        this.pages = pages;
+
+
+        List<Livre> horrorList = new ArrayList<>();
+        List<Livre> loveList = new ArrayList<>();
+        List<Livre> otherList = new ArrayList<>();
+
+        switch (categorie){
+            case "horror" : horrorList.add(this);
+            break;
+            case "love" : loveList.add(this);
+            break;
+            default: otherList.add(this);
         }
-        System.out.println(numberlist);
     }
 }
