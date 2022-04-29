@@ -9,7 +9,7 @@ public class Voyage {
         Voyage voyageOne = new Voyage();
         Scanner input = new Scanner(System.in);
 
-        Ship Emu1 = new Ship("Emu1", "Transport", "Jupiter", "Earth",120, 70);
+        Ship Emu1 = new Ship("Emu1", "Transport", "", "Earth",120, 70);
 
         //Init Persons, Crew members & passengers & planets
         voyageOne.initPersons();
@@ -17,15 +17,16 @@ public class Voyage {
         voyageOne.initPlanets();
         //PROGRAM
         //Presentation
-        System.out.println("Hello, welcome for this journey.");
-        System.out.println("You're now boarding in the " + Emu1.name+".");
-        System.out.println("Where do you want to travel ?");
+        System.out.println("Hello, welcome for this journey.\n");
+        System.out.println("You're now boarding in this awesome interstellar ship, the " + Emu1.name+".\n");
+        System.out.println("Where do you want to travel ?\n");
         voyageOne.showPlanets(voyageOne.planetList);
 
         //Destination Choice
-        System.out.println("You're choice : ");
-        voyageOne.answer = input.next();
-        voyageOne.destinationChoice(voyageOne.answer, Emu1, voyageOne.planetList);
+        voyageOne.destinationChoice(Emu1, voyageOne.planetList); // arguments : Ship, List<Person>
+        voyageOne.timeToDestination(Emu1); // Print time to destination depending of the precedent user choice
+        voyageOne.crewPresentation(Emu1);   //Print the composition of the crew
+
 
     }
     //Variables
@@ -72,29 +73,64 @@ public class Voyage {
     //Show Planets Method
     protected void showPlanets(List<Planet> planetsList){
         for(Planet planet : planetsList){
-            System.out.println((planetsList.indexOf(planet)) + 1 + "/ " + planet.name + ". Distance from Earth : " + planet.distanceFromEarth + " milles kilometres.");
+            System.out.println((planetsList.indexOf(planet)) + 1 + "/ " + planet.name + ". Distance from Earth : " + planet.distanceFromEarth + " milles kilometres.\n");
         }
     }
-    //Destination CHoice method
+    //Destination Choice method
     String destination;
-    protected void destinationChoice(String answer, Ship ship, List<Planet> planetList){
-        boolean goOn = false;
-        int intAnswer = Integer.parseInt(answer);
-        Planet planet;
-        Scanner keyboard = new Scanner(System.in);
+    protected void destinationChoice(Ship ship, List<Planet> planetList){
 
-        while(goOn == false){
-            if(intAnswer != 1 && intAnswer !=2 && intAnswer !=3){
+        boolean goOn = false; //while false, ask question again
+        Planet planet;  // set planet an Instance of the Planet argument from the planetList
+
+
+        while(goOn == false){ //While false, ask question again
+            Scanner keyboard = new Scanner(System.in);  // set new scanner
+            System.out.println("You're choice : ");
+            answer = keyboard.next();                   //input from user
+
+            int intAnswer = Integer.parseInt(answer);   //parse as an Integer the input from user
+
+            if(intAnswer != 1 && intAnswer !=2 && intAnswer !=3){   //Condition to validate choice
                 System.out.println("Veuillez faire un choix valide");
             }else {
-                planet = planetList.get(intAnswer - 1);
-                ship.destination = planet.name;
-                goOn = true;
-                System.out.println("Destination set : " + planet.name);
+                planet = planetList.get(intAnswer - 1); //Select the planet from the list function to user input
+                ship.destination = planet.name;         //set Ship destination to the planet selected
+                goOn = true;                            //Activate condition to continue the programme
+                System.out.println("Destination set : " + planet.name);     //Print statement
             }
         }
     }
 
-    //Time do destination method
+    //Crew Presentation Method-----------------------
+    protected void crewPresentation(Ship ship){
+        System.out.println("We're happy to present you your crew for this journey to " + ship.destination + ".");
+        for (Person person: ship.crewMembersList){
+            System.out.println("Your " + person.job + ", " + person.name + ", aged " + person.age);
+        }
+        System.out.println("");
+    }
+    //Time to Destination Method----------------
+    int timeToDestination = 0;
+    protected int timeToDestination(Ship ship) {
+        String location = ship.localisation;
+        String destination = ship.destination;
 
+        if (location == "Earth") {
+            switch (destination) {
+                case "Moon":
+                    timeToDestination = (int) (Distances.earthMoonDistance / ship.speed);
+                    break;
+                case "Mars":
+                    timeToDestination = (int) (Distances.earthMarsDistance / ship.speed);
+                    break;
+                case "Jupiter":
+                    timeToDestination = (int) (Distances.earthJupiterDistance / ship.speed);
+                    break;
+                default: timeToDestination =0;
+            }
+        }
+        System.out.println("You're journey will dure : " + timeToDestination + " hours.\n");
+        return timeToDestination;
+    }
 }
