@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a8d1412-057c-44d6-9458-5235261514cf" name="Changes" comment="Tuto Java Open classroom Array, ArrayList (List), Set(HashSET)&#10;To fix TesPlayGround">
+    <list default="true" id="2a8d1412-057c-44d6-9458-5235261514cf" name="Changes" comment="Tuto Java Open classroom Array, ArrayList (List), Set(HashSET)&#10;Map/HashMap">
+      <change afterPath="$PROJECT_DIR$/src/TutoJavaOcr/Parameters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TutoJavaOcr/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TutoJavaOcr/Array.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Array">
+  <component name="RunManager" selected="Application.Parameters">
     <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TutoJavaOcr.Array" />
       <module name="TutoJavaOcr" />
@@ -80,10 +80,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainArgs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TutoJavaOcr.MainArgs" />
+    <configuration name="Parameters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TutoJavaOcr.Parameters" />
       <module name="TutoJavaOcr" />
-      <option name="PROGRAM_PARAMETERS" value="Kevin Cmaille" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="TutoJavaOcr.*" />
@@ -109,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Parameters" />
         <item itemvalue="Application.Array" />
         <item itemvalue="Application.TestField" />
         <item itemvalue="Application.Heritage" />
         <item itemvalue="Application.Book" />
-        <item itemvalue="Application.MainArgs" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651070513903</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Tuto Java Open classroom Array, ArrayList (List), Set(HashSET)&#10;Map/HashMap">
+      <created>1651219810076</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1651219810076</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +194,7 @@
     <MESSAGE value="Tuto Java Open classroom POO" />
     <MESSAGE value="Tuto Java Open classroom Array, ArrayList (List), Set(HashSET)" />
     <MESSAGE value="Tuto Java Open classroom Array, ArrayList (List), Set(HashSET)&#10;To fix TesPlayGround" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tuto Java Open classroom Array, ArrayList (List), Set(HashSET)&#10;To fix TesPlayGround" />
+    <MESSAGE value="Tuto Java Open classroom Array, ArrayList (List), Set(HashSET)&#10;Map/HashMap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tuto Java Open classroom Array, ArrayList (List), Set(HashSET)&#10;Map/HashMap" />
   </component>
 </project>
