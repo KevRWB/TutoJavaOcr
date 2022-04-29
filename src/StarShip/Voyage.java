@@ -21,13 +21,15 @@ public class Voyage {
         System.out.println("You're now boarding in the " + Emu1.name+".");
         System.out.println("Where do you want to travel ?");
         voyageOne.showPlanets(voyageOne.planetList);
-        //Destination Choice
-        while(true) {
-            String destinationChoice = input.next();
-        }
 
+        //Destination Choice
+        System.out.println("You're choice : ");
+        voyageOne.answer = input.next();
+        voyageOne.destinationChoice(voyageOne.answer, Emu1, voyageOne.planetList);
 
     }
+    //Variables
+    String answer;
 
     //init Persons method
     List<Person> personsList = new ArrayList<>();
@@ -74,7 +76,23 @@ public class Voyage {
         }
     }
     //Destination CHoice method
-    protected void destinationChoice(String answer){
+    String destination;
+    protected void destinationChoice(String answer, Ship ship, List<Planet> planetList){
+        boolean goOn = false;
+        int intAnswer = Integer.parseInt(answer);
+        Planet planet;
+        Scanner keyboard = new Scanner(System.in);
+
+        while(goOn == false){
+            if(intAnswer != 1 && intAnswer !=2 && intAnswer !=3){
+                System.out.println("Veuillez faire un choix valide");
+            }else {
+                planet = planetList.get(intAnswer - 1);
+                ship.destination = planet.name;
+                goOn = true;
+                System.out.println("Destination set : " + planet.name);
+            }
+        }
     }
 
     //Time do destination method

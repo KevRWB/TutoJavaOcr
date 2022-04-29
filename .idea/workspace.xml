@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a8d1412-057c-44d6-9458-5235261514cf" name="Changes" comment="Ship project begennin">
-      <change afterPath="$PROJECT_DIR$/src/StarShip/Distances.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StarShip/Planet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StarShip/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StarShip/Ship.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StarShip/Voyage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StarShip/Voyage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651227472947</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Ship project begennin">
+      <created>1651229878727</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651229878727</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
