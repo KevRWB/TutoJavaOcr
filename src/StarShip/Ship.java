@@ -8,13 +8,15 @@ public class Ship {
     String name;
     String role;
     String destination;
+    String localisation;
     int fuelCapacity;
     int speed;
 
-    public Ship(String name, String role, String destination, int fuelCapacity, int speed) {
+    public Ship(String name, String role, String destination,String localisation, int fuelCapacity, int speed) {
         this.name = name;
         this.role = role;
         this.destination = destination;
+        this.localisation = localisation;
         this.fuelCapacity = fuelCapacity;
         this.speed = speed;
     }
